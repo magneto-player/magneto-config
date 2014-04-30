@@ -1,0 +1,29 @@
+{
+  "name": "niceplay-config",
+  "version": "0.0.0",
+  "private": true,
+  "main": "lib/config.js",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "grunt": "^0.4.4",
+    "grunt-coffeelint": "0.0.10",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-coffee": "^0.10.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-env": "^0.4.1",
+    "grunt-istanbul": "^0.2.5",
+    "grunt-istanbul-coverage": "0.0.5",
+    "grunt-mocha-test": "^0.10.2",
+    "grunt-open": "^0.2.3",
+    "load-grunt-tasks": "^0.4.0",
+    "chai-fs": "0.0.3",
+    "grunt-contrib-copy": "^0.5.0"
+  },
+  "dependencies": {
+    "config-chain": "^1.1.8",
+    "dotty": "0.0.2",
+    "emissary": "^1.2.1",
+    "fs-plus": "^2.2.2",
+    "lodash": "^2.4.1"
+  }
+}
