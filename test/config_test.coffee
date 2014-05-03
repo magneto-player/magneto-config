@@ -13,6 +13,9 @@ requireTest = (path) ->
 requireConfig = -> requireTest('lib/config')
 getConfig = (opt) -> new (requireConfig())(opt)
 
+tmpPath = (strPath) ->
+  path.join __dirname, '../.tmp', strPath
+
 describe 'Config', ->
   [config] = []
 
@@ -23,6 +26,12 @@ describe 'Config', ->
     expect(->
       getConfig()
     ).throws('options.dir is mandatory.')
+
+  it 'Create folder is not exists', ->
+    dir = tmpPath 'does/not/exists'
+    getConfig(dir: dir)
+    expect(dir).to.be.a.directory('Dir should exists before instanciation')
+    expect(path.join(dir, 'config.json')).to.be.a.file('And dir should contain a config.json')
 
 
 describe 'Config::get', ->

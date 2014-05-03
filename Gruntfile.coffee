@@ -29,7 +29,7 @@ module.exports = (grunt) ->
 
     clean:
       src: ['lib']
-      test: ['test_lib', '.tmp/storage']
+      test: ['test_lib', '.tmp']
 
     coffeelint:
       options:
