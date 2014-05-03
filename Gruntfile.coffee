@@ -86,7 +86,7 @@ module.exports = (grunt) ->
       options:
         thresholds:
           statements: 90
-          branches: 90
+          branches: 70
           lines: 90
           functions: 90
 

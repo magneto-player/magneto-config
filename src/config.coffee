@@ -36,12 +36,12 @@ class Config extends Store
       config = JSON.parse configFile
       _.extend @_data, config
 
-      @emit 'updated'
+      @_update()
     catch e
       console.error "Failed to load user config '#{@_configFilePath}#'", e.message
       console.error e.stack
 
-  save: ->
+  _save: ->
     fs.writeFileSync @_configFilePath, JSON.stringify(@_data, null, 2)
 
 module.exports = Config
