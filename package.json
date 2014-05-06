@@ -1,6 +1,6 @@
 {
   "name": "niceplay-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/config.js",
   "devDependencies": {
     "chai": "^1.9.1",
