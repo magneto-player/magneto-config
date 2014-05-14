@@ -4,7 +4,7 @@ path = require 'path'
 _ = require 'lodash'
 assert = require 'assert'
 
-Store = require './store'
+Store = require 'dottystore'
 
 class Config extends Store
   constructor: (options = {}) ->

@@ -2,6 +2,10 @@
   "name": "niceplay-config",
   "version": "0.0.2",
   "main": "lib/config.js",
+  "scripts": {
+    "test": "grunt test",
+    "prepublish": "grunt src"
+  },
   "devDependencies": {
     "chai": "^1.9.1",
     "chai-fs": "0.0.3",
@@ -21,9 +25,7 @@
     "load-grunt-tasks": "^0.4.0"
   },
   "dependencies": {
-    "config-chain": "^1.1.8",
-    "dotty": "0.0.2",
-    "emissary": "^1.2.1",
+    "dottystore": "0.0.1",
     "fs-plus": "^2.2.2",
     "lodash": "^2.4.1"
   }
