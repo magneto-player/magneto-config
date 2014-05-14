@@ -1,6 +1,6 @@
 {
   "name": "niceplay-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/config.js",
   "scripts": {
     "test": "grunt test",
