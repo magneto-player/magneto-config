@@ -1,5 +1,5 @@
 {
-  "name": "niceplay-config",
+  "name": "magneto-config",
   "version": "0.0.4",
   "main": "lib/config.js",
   "scripts": {
